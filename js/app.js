@@ -20,7 +20,7 @@
 
 function colors() { 
   let change = 000000;
-  variable.style.color = 'change';
+  variable.style.color = '#' + 'change';
   change += 100;
 }
   
