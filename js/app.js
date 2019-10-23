@@ -18,16 +18,6 @@
  * 
 */
 
-function colors() { 
-  let change = 000000;
-  variable.style.color = '#' + 'change';
-  change += 100;
-  console.log(change);
-}
-  
-const variable = document.querySelector('h1');
-variable.addEventListener('click', colors);
-
 /**
  * End Global Variables
  * Start Helper Functions
