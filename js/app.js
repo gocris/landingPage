@@ -23,7 +23,7 @@ function colors() {
 }
   
 const variable = document.querySelector('h1');
-variable.addEventListener('click, colors);
+variable.addEventListener('click', colors);
 
 /**
  * End Global Variables
