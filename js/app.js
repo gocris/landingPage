@@ -22,6 +22,7 @@ function colors() {
   let change = 000000;
   variable.style.color = '#' + 'change';
   change += 100;
+  console.log("color has changed");
 }
   
 const variable = document.querySelector('h1');
