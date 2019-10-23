@@ -19,7 +19,7 @@
 */
 
 function colors() { 
-  variable.style.color = 'red';
+  variable.style.color = '#00000';
 }
   
 const variable = document.querySelector('h1');
