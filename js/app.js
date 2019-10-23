@@ -19,7 +19,9 @@
 */
 
 function colors() { 
-  variable.style.color = '#000000';
+  let change = 000000;
+  variable.style.color = 'change';
+  change += 100;
 }
   
 const variable = document.querySelector('h1');
