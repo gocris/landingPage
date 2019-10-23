@@ -17,8 +17,13 @@
  * Define Global Variables
  * 
 */
+
+function colors() { 
+  variable.style.color = 'red';
+}
+  
 const variable = document.querySelector('h1');
-variable.style.color = 'red';
+variable.addEventListener('click, colors);
 
 /**
  * End Global Variables
