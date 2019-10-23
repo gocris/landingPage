@@ -17,7 +17,8 @@
  * Define Global Variables
  * 
 */
-
+const variable = document.querySelector('h1');
+variable.style.color = 'red';
 
 /**
  * End Global Variables
