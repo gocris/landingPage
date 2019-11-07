@@ -33,7 +33,10 @@
 */
 
 // build the nav
-
+const navbar = document.querySelector('navbar__list');
+const listItem = document.createElement('li');
+navbar.appendChild(listItem);
+listItem.setAttribute('class', 'navListItems');
 
 // Add class 'active' to section when near top of viewport
 
