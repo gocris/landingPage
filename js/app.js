@@ -37,6 +37,7 @@ const navbar = document.querySelector('#navbar__list');
 const listItem = document.createElement('li');
 for (let i = 0; i < 4; i++) {
   navbar.appendChild(listItem);
+  console.log('for li created');
 }
 listItem.setAttribute('class', 'navListItems');
 
