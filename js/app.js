@@ -60,7 +60,7 @@ let ele = function createEle(query, element, repeat) {
  * Begin Events
  * 
 */
-ele('navbar__list', 'li', 4);
+ele('#navbar__list', 'li', 4);
 
 (function() { 
     const target = document.querySelectorAll('.navItem');
