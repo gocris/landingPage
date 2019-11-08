@@ -72,11 +72,11 @@ section {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    line-style-type: none;
 }
 
 .navbar__menu li {
     flex-grow: 1;
-    line-decoration: none;
     padding: 16px 2.5px 0 2.5px;
 }
 /*
