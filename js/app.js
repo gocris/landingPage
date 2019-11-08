@@ -60,6 +60,8 @@ let ele = function createEle(query, element, repeat) {
  * Begin Events
  * 
 */
+ele('navbar__list', 'li', 4);
+
 (function() { 
     const target = document.querySelectorAll('.navItem');
     
@@ -74,7 +76,6 @@ let ele = function createEle(query, element, repeat) {
     }
 
 // Build menu 
-ele('navbar__list', 'li', 4);
 
 // Scroll to section on link click
 
