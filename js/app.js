@@ -74,7 +74,7 @@ ele('navbar__list', 'li', 4);
             target[i].style.cssText = 'color: black';
         });
     }
-))();
+})();
 
 // Build menu 
 
