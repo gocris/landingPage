@@ -76,10 +76,10 @@ section {
 
 .navbar__menu li {
     flex-grow: 1;
-    text-decoration: none;
+    line-decoration: none;
     padding: 16px 2.5px 0 2.5px;
 }
-
+/*
 .navbar__menu .menu__link {
     display: block;
     padding: 1em;
@@ -93,6 +93,7 @@ section {
     color: #fff;
     transition: ease 0.3s all;
 }
+*/
 
 /* Header Styles */
 .page__header {
