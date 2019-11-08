@@ -33,13 +33,21 @@
 */
 
 // build the nav
-const navbar = document.querySelector('#navbar__list');
-const listItem = document.createElement('li');
-for (let i = 0; i < 4; i++) {
-  navbar.appendChild(listItem);
-  console.log('for li created');
+let ele = function createEle(query, element, repeat) { 
+    const target = document.querySelector(query);
+    
+    for (let i = 0; i < repeat; i++) {
+        let idTag = `Section ${i + 1}`;
+        
+        let att = document.createElement(element);
+        att.setAttribute('id', idTag);
+        att.setAttribute('class','navItem');
+        att.textContent = idTag;
+        target.appendChild(att);
+    }
+    
+    console.log(`${repeat} times the element: ${element} was created in ${query}`);
 }
-listItem.setAttribute('class', 'navListItems');
 
 // Add class 'active' to section when near top of viewport
 
@@ -52,8 +60,21 @@ listItem.setAttribute('class', 'navListItems');
  * Begin Events
  * 
 */
+(function() { 
+    const target = document.querySelectorAll('.navItem');
+    
+    for (let i = 0; i < target.length; i++) {
+        target[i].addEventListener('mouseenter', function() { 
+            target[i].style.cssText = 'color: white; background: #19DF6F; border: solid #00A046 1px';
+        });
+        
+         target[i].addEventListener('mouseleave', function() { 
+            target[i].style.cssText = 'color: black';
+        });
+    }
 
 // Build menu 
+ele('navbar__list', 'li', 4);
 
 // Scroll to section on link click
 
