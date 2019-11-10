@@ -111,16 +111,17 @@ section {
 */
 /* Header Styles */
 .page__header {
-    display: flex;
+	display: flex;
   	flex-direction: row;
-    position: fixed;
-  top: 0;
-  	height: 45px;
-    width: 100%;
+  	position: fixed;
+	z-index: 1;
+  	top: 0;
+	height: 45px;
+	width: 100%;
   	background: linear-gradient(#00A678 , #C8FFF0);
   	color: black;
   	border-bottom: solid black 5px;
-    margin: 0;
+    	margin: 0;
 }
 
 /* Footer Styles */
