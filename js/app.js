@@ -95,6 +95,10 @@ ele('#navbar__list', 'li', 4, 'class', 'navItem');
 (function() { 
   const target = document.getElementsByClassName('navItem');
   
+    target[0].addEventListener('click', function() { 
+    window.scrollTo(location.href = '#top');
+  });  
+    
   target[1].addEventListener('click', function() { 
     window.scrollTo(location.href = '#section1');
   });
