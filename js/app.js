@@ -33,22 +33,35 @@
 */
 
 // build the nav
-let ele = function createEle(query, element, repeat) { 
+let ele = function (query, element, repeat, attribute, attName) { 
     const target = document.querySelector(query);
     
     for (let i = 0; i < repeat; i++) {
-        let idTag = `Section ${i + 1}`;
-        
         let att = document.createElement(element);
-        att.setAttribute('id', idTag);
-        att.setAttribute('class','navItem');
-        att.textContent = idTag;
+        att.setAttribute(attribute, attName);
+        //att.textContent = `Section ${i}`;
         target.appendChild(att);
     }
-    
+  
     console.log(`${repeat} times the element: ${element} was created in ${query}`);
 }
 
+/*
+let secondEle = function() {
+  	for(let i = 0; i < 4; i++) {
+  		const target = document.getElementsByClassName('navItem')[i];
+        let idTag = `#section${i}`;
+      
+    	for (let j = 0; j < 1; j++) {
+          let att = document.createElement('a');
+          att.setAttribute('href', idTag);
+          att.textContent = `Section ${i}`;
+          target.appendChild(att);
+      }
+  
+    }
+}
+*/
 // Add class 'active' to section when near top of viewport
 
 
@@ -60,21 +73,68 @@ let ele = function createEle(query, element, repeat) {
  * Begin Events
  * 
 */
-ele('#navbar__list', 'li', 4);
+
+ele('#navbar__list', 'li', 4, 'class', 'navItem');
+//secondEle();
+
+(function(title, content1, content2, content3) {
+  
+  const heading = document.querySelector('h1');
+  heading.textContent = title;
+
+  const item = document.getElementsByClassName('navItem');
+
+  item[0].textContent = heading.textContent;
+  item[1].textContent = content1;
+  item[2].textContent = content2;
+  item[3].textContent = content3;
+
+})('Landing Page', 'Section 1', 'Section 2', 'Section 3'); 
+
+
+(function() { 
+  const target = document.getElementsByClassName('navItem');
+  
+  target[1].addEventListener('click', function() { 
+    window.scrollTo(location.href = '#section1');
+  });
+  
+  target[2].addEventListener('click', function() { 
+    window.scrollTo(location.href = '#section2');
+  });
+  
+  target[3].addEventListener('click', function() { 
+    window.scrollTo(location.href = '#section3');
+  });
+  
+  
+})();
+
 
 (function() { 
     const target = document.querySelectorAll('.navItem');
     
     for (let i = 0; i < target.length; i++) {
         target[i].addEventListener('mouseenter', function() { 
-            target[i].style.cssText = 'color: white; background: #19DF6F; border: solid #00A046 1px';
+            target[i].style.cssText = 'color: white; background: #19DF6F; cursor: pointer; transition: 1s';
         });
         
          target[i].addEventListener('mouseleave', function() { 
-            target[i].style.cssText = 'color: black';
+            target[i].style.cssText = 'transition: 1s; color: black;';
         });
     }
 })();
+
+
+
+
+
+/*
+(function() { 
+  const target = document.getElementsByClass('navItem')[0];
+  
+})();
+*/
 
 // Build menu 
 
