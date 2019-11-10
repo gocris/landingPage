@@ -96,19 +96,19 @@ ele('#navbar__list', 'li', 4, 'class', 'navItem');
   const target = document.getElementsByClassName('navItem');
   
     target[0].addEventListener('click', function() { 
-    window.scrollTo(location.href = '#top');
+    location.href = '#top';
   });  
     
   target[1].addEventListener('click', function() { 
-    window.scrollTo(location.href = '#section1');
+    location.href = '#section1';
   });
   
   target[2].addEventListener('click', function() { 
-    window.scrollTo(location.href = '#section2');
+    location.href = '#section2';
   });
   
   target[3].addEventListener('click', function() { 
-    window.scrollTo(location.href = '#section3');
+    location.href = '#section3';
   });
   
   
