@@ -12,9 +12,9 @@ The function **navItemTextContent** adds the desired text for each indivial list
 
 ### Event Section 
 
-There are two IFFE functions that contain event listeners that correspoing to the page's navigation. At the same time, once a section is cliked, the active class is removed from the current section that has the active class so that two list items wont be highlighted at the same time. The corresponding function is called **eraseAcitve**.
+There are two IFFE functions that contain event listeners that correspoing to the page's navigation. 
 
-The first IFFE function is a set of click event listeners for the navigation bar that jump to the corresponding section of a list item
+The first IFFE function is a set of click event listeners for the navigation bar that jump to the corresponding section of a list item. At the same time, once a section is cliked, the active class is removed from the current section that has the active class so that two list items wont be highlighted at the same time. The corresponding function is called **eraseAcitve**.
 
 The second IFFE function has a mouse hover listener that hihglights the navigation bar. Also the function contains a click listener that assings an active class to the section that is clicked. 
 
